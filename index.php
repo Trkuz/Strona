@@ -41,8 +41,8 @@ if (isset ($_SESSION["user_id"])){
             <?php if (isset($user)): ?>
 
                 <li ><a href="stylep.php"  >Style Piwne</a></li>
-                <li><a href="#">O Piwie</a></li>
-                <li ><a href="#">Sensoryka</a></li>
+                <li><a href="opiwie.php">O Piwie</a></li>
+                <li ><a href="sens.php">Sensoryka</a></li>
                 <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars($user["name"])?></a></li>
 
             <?php else: ?>
