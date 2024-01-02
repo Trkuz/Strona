@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="beer-icon-png-2.png">
     <title>Świat Piwa</title>
-    <link rel="stylesheet" href="strona/style.css">
+    <link rel="stylesheet" href="style.css">
 
 
     
@@ -67,7 +67,7 @@
                 <li ><a href="stylep.php">Style Piwne</a></li>
                 <li><a href="opiwie.php">O Piwie</a></li>
                 <li ><a href="stylep.php">Sensoryka</a></li>
-                <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars("Wyloguj się!"])?></a></li>
+                <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars("Wyloguj się!")?></a></li>
 
             <?php else: ?>
                 <li><p  onclick = "openPopup()">Style Piwne</p></li>

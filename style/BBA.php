@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="beer-icon-png-2.png">
     <title>Świat Piwa</title>
-    <link rel="stylesheet" href="strona/style.css">
+    <link rel="stylesheet" href="style.css">
     
     <title>Belgian Blond Ale: Elegancja, Subtelność i Złocisty Blask Tradycji Piwowarskiej</title>
     <style>
