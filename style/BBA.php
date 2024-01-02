@@ -1,3 +1,9 @@
+<?php 
+    session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="beer-icon-png-2.png">
     <title>Świat Piwa</title>
-    <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="strona/style.css">
     
     <title>Belgian Blond Ale: Elegancja, Subtelność i Złocisty Blask Tradycji Piwowarskiej</title>
     <style>
@@ -56,12 +60,12 @@
 
     <div class="nav">
         <ul >
-            <?php if (isset($user)): ?>
+            <?php if (isset($_SESSION)): ?>
                 
                 <li ><a href="stylep.php">Style Piwne</a></li>
                 <li><a href="opiwie.php">O Piwie</a></li>
                 <li ><a href="stylep.php">Sensoryka</a></li>
-                <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars($user["name"])?></a></li>
+                <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars("Wyloguj się!")?></a></li>
 
             <?php else: ?>
                 <li><p  onclick = "openPopup()">Style Piwne</p></li>
@@ -76,7 +80,7 @@
 
     </div>
 
-    <?php if (!isset($user)): ?> 
+    <?php if (!isset($_SESSION)): ?> 
         <div class="popup" id ="popup">
             <h1>Muisz się zalogować aby użyć tej funkcji!</h1>
 

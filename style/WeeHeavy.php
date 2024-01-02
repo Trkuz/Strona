@@ -1,3 +1,9 @@
+<?php 
+    session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,12 +62,12 @@
 
     <div class="nav">
         <ul >
-            <?php if (isset($user)): ?>
+            <?php if (isset($_SESSION)): ?>
                 
                 <li ><a href="stylep.php">Style Piwne</a></li>
                 <li><a href="opiwie.php">O Piwie</a></li>
                 <li ><a href="stylep.php">Sensoryka</a></li>
-                <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars($user["name"])?></a></li>
+                <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars("Wyloguj się!")?></a></li>
 
             <?php else: ?>
                 <li><p  onclick = "openPopup()">Style Piwne</p></li>
@@ -76,7 +82,7 @@
 
     </div>
 
-    <?php if (!isset($user)): ?> 
+    <?php if (!isset($_SESSION)): ?> 
         <div class="popup" id ="popup">
             <h1>Muisz się zalogować aby użyć tej funkcji!</h1>
 
