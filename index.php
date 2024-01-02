@@ -43,7 +43,7 @@ if (isset ($_SESSION["user_id"])){
                 <li ><a href="stylep.php"  >Style Piwne</a></li>
                 <li><a href="opiwie.php">O Piwie</a></li>
                 <li ><a href="sens.php">Sensoryka</a></li>
-                <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars($user["name"])?></a></li>
+                <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars("Wyloguj się!")?></a></li>
 
             <?php else: ?>
                 <li><p  onclick = "openPopup()">Style Piwne</p></li>
