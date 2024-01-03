@@ -1,6 +1,6 @@
 <?php
 
-    $is_invalid = false; 
+    $is_invalid = false;  #tworzenie zmiennej is_invalid 
 
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
     

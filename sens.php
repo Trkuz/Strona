@@ -66,7 +66,7 @@
                 
                 <li ><a href="stylep.php">Style Piwne</a></li>
                 <li><a href="opiwie.php">O Piwie</a></li>
-                <li ><a href="stylep.php">Sensoryka</a></li>
+                <li ><a href="sens.php">Sensoryka</a></li>
                 <li><a href="wyloguj.php" target="_self" class="logowanie"><?= htmlspecialchars("Wyloguj się!")?></a></li>
 
             <?php else: ?>

@@ -40,9 +40,11 @@
 
     </div>
         
-    <div class="style">
+    <div class="style"><!--Tworzenie diva o klanie style-->
+        <!--Tworzenie nieponumerowanej listy-->
         <ul>
-            <li><a href="Altbier.php">Altbier</a></li>
+            <!-- Dodawanie elementów list zawierających odnośniki do każdej z podstron, aktywujących się po klinknięciu:-->
+            <li><a href="Altbier.php">Altbier</a></li> 
             <li><a href="BBA.php">Belgian blond ale</a></li>
             <li><a href="BD.php">Belgian dubbel</a></li>
             <li><a href="BerlinerWeisse.php">Berliner weisse</a></li>
